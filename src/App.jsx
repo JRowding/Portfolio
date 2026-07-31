@@ -6,6 +6,7 @@ const projects = [
   { id:"03", code:"♠", name:"Ring of Fire", strap:"Draw the card. Regret your choices.", description:"A local pass-and-play drinking game that turns one phone and one deck into a whole evening.", url:"https://ringoffiredg.onrender.com", type:"PARTY GAME", color:"#ff675c", ink:"#11110f" },
   { id:"04", code:"92", name:"GroundStride", strap:"Every kilometre. Every ground.", description:"Log real exercise and travel virtually from Telford to all 92 English league stadiums.", url:"https://groundstride-92.onrender.com", type:"FOOTBALL / FITNESS", color:"#24533d", ink:"#f4efdf" },
   { id:"05", code:"FPL", name:"Assistant Manager", strap:"Move before the crowd.", description:"A live FPL decision room for transfers, captaincy, starting XI and risk—grounded in your squad.", url:"https://fpl-assistant-manager.onrender.com", type:"FOOTBALL / TOOL", color:"#6c47ff", ink:"#ffffff" },
+  { id:"06", code:"TF", name:"TF Sessions", strap:"Music without borders.", description:"A growing collection of original music across every genre. Press play, find your session, and come back for the next drop.", url:"https://tfsessions.onrender.com/", type:"MUSIC / AUDIO", color:"#00d9e8", ink:"#071416" },
 ];
 
 function Loader({ finish }) {
@@ -33,7 +34,7 @@ function Loader({ finish }) {
 
   return (
     <div className="loader" role="status" aria-label="Loading project collection">
-      <div className="loader-corner tl"><i /> SIGNAL <b>LOCKED</b><br />INDEX <b>05/05</b></div>
+      <div className="loader-corner tl"><i /> SIGNAL <b>LOCKED</b><br />INDEX <b>06/06</b></div>
       <div className="loader-corner tr">JR_PORTFOLIO.OS<br />SESSION <b>2026</b></div>
       <div className="loader-corner bl">RUN <b>{count < 30 ? "BOOT" : count < 70 ? "SYNC" : "READY"}</b><br />LOAD <b>{String(count).padStart(3,"0")}%</b></div>
       <div className="loader-corner br">PROJECT INDEX<br />BUILD <b>001</b></div>
@@ -45,7 +46,7 @@ function Loader({ finish }) {
             </div>
           ))}
         </div>
-        <p>DEALING FIVE BUILDS</p>
+        <p>DEALING SIX BUILDS</p>
       </div>
       <div className="loader-progress"><div style={{ width:`${count}%` }} /></div>
       <button onClick={finish}>SKIP INTRO ↗</button>
@@ -86,7 +87,7 @@ export default function App() {
       {loading && <Loader finish={finishLoading} />}
       <div className="ambient" aria-hidden="true" />
       <header className="compact-header">
-        <div className="mini-brand"><i /> JR PORTFOLIO <span>/ 05 BUILDS</span></div>
+        <div className="mini-brand"><i /> JR PORTFOLIO <span>/ 06 BUILDS</span></div>
         <p>HOVER TO INSPECT · CLICK TO LAUNCH</p>
       </header>
       <section className="deck" aria-label="Project collection">

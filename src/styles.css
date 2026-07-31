@@ -14,7 +14,7 @@ main { min-height:100svh; display:grid; grid-template-rows:58px 1fr 54px; positi
 .mini-brand { display:flex; align-items:center; gap:9px; }
 .mini-brand i,.compact-footer i { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--acid); box-shadow:0 0 12px var(--acid); animation:pulse 1.6s steps(2) infinite; }
 .mini-brand span,.compact-header p,.compact-footer { color:#77766e; }
-.deck { display:flex; gap:10px; align-items:stretch; padding:18px 22px 20px; min-height:0; perspective:1300px; }
+.deck { display:flex; gap:8px; align-items:stretch; padding:18px 22px 20px; min-height:0; perspective:1300px; }
 .build-card { --rx:0deg; --ry:0deg; --mx:50%; --my:50%; flex:1 1 0; min-width:0; background:var(--card); color:var(--card-ink); border:1px solid rgba(255,255,255,.22); padding:15px; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden; transform:rotateX(var(--rx)) rotateY(var(--ry)) translateZ(0); transform-style:preserve-3d; transition:flex-grow .42s cubic-bezier(.16,1,.3,1),transform .12s ease,filter .3s,opacity .3s; isolation:isolate; }
 .deck:has(.build-card:hover) .build-card:not(:hover),.deck:has(.build-card:focus-visible) .build-card:not(:focus-visible) { opacity:.5; filter:saturate(.6); }
 .build-card:hover,.build-card:focus-visible { flex-grow:1.9; z-index:2; outline:none; box-shadow:0 22px 60px rgba(0,0,0,.45); }
@@ -28,7 +28,7 @@ main { min-height:100svh; display:grid; grid-template-rows:58px 1fr 54px; positi
 .build-card:hover .card-symbol,.build-card:focus-visible .card-symbol { transform:rotate(2deg) scale(1.08) translateZ(38px); }
 .card-body { transform:translateZ(22px); }
 .card-body>p { margin:0 0 5px; font-size:10px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
-.card-body h2 { font-family:Impact,"Arial Narrow",sans-serif; font-size:clamp(30px,3.35vw,59px); line-height:.88; letter-spacing:-.025em; text-transform:uppercase; margin:0; overflow-wrap:anywhere; }
+.card-body h2 { font-family:Impact,"Arial Narrow",sans-serif; font-size:clamp(27px,3vw,54px); line-height:.88; letter-spacing:-.025em; text-transform:uppercase; margin:0; overflow-wrap:anywhere; }
 .card-description { max-height:0; opacity:0; overflow:hidden; font-size:13px; line-height:1.35; font-weight:700; max-width:390px; transform:translateY(12px); transition:max-height .42s ease,opacity .25s .06s,transform .35s .04s,margin .35s; }
 .build-card:hover .card-description,.build-card:focus-visible .card-description { max-height:100px; opacity:.8; transform:translateY(0); margin-top:13px; }
 .card-foot { border-top:1px solid currentColor; padding-top:12px; margin-top:16px; }

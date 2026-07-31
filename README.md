@@ -1,6 +1,6 @@
 # JR Portfolio
 
-An interactive card-based portfolio linking to five live projects.
+An interactive card-based portfolio linking to six live projects.
 
 ## Run locally
 
