@@ -12,6 +12,8 @@ const projects = [
   { id:"09", code:"MS", name:"MatchSignal", strap:"Recent form. Clear signals.", description:"A football prediction dashboard built around direct head-to-head history, current form, and goal likelihoods.", url:"https://matchsignal.onrender.com/", type:"FOOTBALL / PREDICTIONS", color:"#b8ff4e", ink:"#102000" },
   { id:"10", code:"TB", name:"Throwball", strap:"Three darts. One football score.", description:"A darts-meets-football simulator where every three-dart combination maps into a match result and builds your Premier League table.", url:"https://throwball.onrender.com/", type:"FOOTBALL / DARTS", color:"#ffb347", ink:"#17110a" },
   { id:"11", code:"NL", name:"Needle Lounge", strap:"Ideas in. Ink out.", description:"A tattoo studio website and enquiry hub for exploring work, sharing ideas, uploading references and starting a booking conversation.", url:"https://needlelounge.onrender.com/", type:"TATTOO / BUSINESS", color:"#f3d5c8", ink:"#241916" },
+  { id:"12", code:"WB", name:"WatchBox", strap:"Pick a box. See what happens.", description:"A compact browser game built for quick play, simple choices and that dangerous little urge to have one more go.", url:"https://watchboxgame.netlify.app/", type:"GAME / WEB", color:"#ffd84d", ink:"#18140a" },
+  { id:"13", code:"26", name:"WCSB26", strap:"World Cup. One scoreboard.", description:"A football companion build for the 2026 World Cup, keeping the tournament experience together in one dedicated place.", url:"https://wcsb26.netlify.app/", type:"FOOTBALL / 2026", color:"#4de0b5", ink:"#071a15" },
 ];
 
 function Loader({ finish }) {
@@ -39,7 +41,7 @@ function Loader({ finish }) {
 
   return (
     <div className="loader" role="status" aria-label="Loading project collection">
-      <div className="loader-corner tl"><i /> SIGNAL <b>LOCKED</b><br />INDEX <b>11/11</b></div>
+      <div className="loader-corner tl"><i /> SIGNAL <b>LOCKED</b><br />INDEX <b>{projects.length}/{projects.length}</b></div>
       <div className="loader-corner tr">JR_PORTFOLIO.OS<br />SESSION <b>2026</b></div>
       <div className="loader-corner bl">RUN <b>{count < 30 ? "BOOT" : count < 70 ? "SYNC" : "READY"}</b><br />LOAD <b>{String(count).padStart(3,"0")}%</b></div>
       <div className="loader-corner br">PROJECT INDEX<br />BUILD <b>001</b></div>
@@ -51,7 +53,7 @@ function Loader({ finish }) {
             </div>
           ))}
         </div>
-        <p>DEALING ELEVEN BUILDS</p>
+        <p>DEALING {projects.length} BUILDS</p>
       </div>
       <div className="loader-progress"><div style={{ width:`${count}%` }} /></div>
       <button onClick={finish}>SKIP INTRO ↗</button>
@@ -92,7 +94,7 @@ export default function App() {
       {loading && <Loader finish={finishLoading} />}
       <div className="ambient" aria-hidden="true" />
       <header className="compact-header">
-        <div className="mini-brand"><i /> JR PORTFOLIO <span>/ 11 BUILDS</span></div>
+        <div className="mini-brand"><i /> JR PORTFOLIO <span>/ {projects.length} BUILDS</span></div>
         <p>HOVER TO INSPECT · CLICK TO LAUNCH</p>
       </header>
       <section className="deck" aria-label="Project collection">
