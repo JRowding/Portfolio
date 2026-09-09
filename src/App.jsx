@@ -14,6 +14,7 @@ const projects = [
   { id:"11", code:"NL", name:"Needle Lounge", strap:"Ideas in. Ink out.", description:"A tattoo studio website and enquiry hub for exploring work, sharing ideas, uploading references and starting a booking conversation.", url:"https://needlelounge.onrender.com/", type:"TATTOO / BUSINESS", color:"#f3d5c8", ink:"#241916" },
   { id:"12", code:"WB", name:"WatchBox", strap:"Pick a box. See what happens.", description:"A compact browser game built for quick play, simple choices and that dangerous little urge to have one more go.", url:"https://watchboxgame.netlify.app/", type:"GAME / WEB", color:"#ffd84d", ink:"#18140a" },
   { id:"13", code:"26", name:"WCSB26", strap:"World Cup. One scoreboard.", description:"A football companion build for the 2026 World Cup, keeping the tournament experience together in one dedicated place.", url:"https://wcsb26.netlify.app/", type:"FOOTBALL / 2026", color:"#4de0b5", ink:"#071a15" },
+  { id:"14", code:"AQ", name:"AccaQuest", strap:"Build the acca. Keep it virtual.", description:"A private football accumulator simulator using live fixtures, markets and odds to build and track virtual accas without real-money gambling.", url:"https://accaquest.onrender.com/", type:"FOOTBALL / SIMULATOR", color:"#ff6b4a", ink:"#1a0d08" },
 ];
 
 function Loader({ finish }) {
